@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: lightgrey;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#email-signin, 
+#senha-signin, #email-signup, #senha-signup {
+  width: 100%; 
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 10px; 
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    padding: 15px;
+  }
+}

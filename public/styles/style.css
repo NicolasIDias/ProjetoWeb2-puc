@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box; 
+  }
+  
+  /* 
+    CONFIGURAÇÕES DO HEADER 
+  */
+  header {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 10px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap; 
+  }
+  
+  .botao-login, .botao-registro {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    border-radius: 4px;
+    margin: 5px; 
+  }
+  
+  .botao-login:hover, .botao-registro:hover {
+    background-color: #0056b3;
+  }
+  
+  #barra-pesquisa {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    width: 200px;
+    margin: 5px; 
+  }
+  
+  #logo {
+    width:100px;
+  }
+  
+  /* 
+    CONFIGURAÇÕES DO FOOTER 
+  */
+  footer {
+    background-color: lightgray;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  footer img {
+    max-width: 100px; 
+  }
+  
+  footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  footer nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* 
+    CONFIGURAÇÕES DO NAV 
+  */
+  .options {
+    background-color: rgb(228, 227, 218);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+  }
+  
+  #option {
+    text-decoration: none;
+    padding: 10px;
+    color: #333;
+  }
+  
+  /*
+    CONFIGURAÇÕES DO CARROSSEL
+  */
+  .trailer {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0, 0, 20px, 0;
+  }
+  
+  .background {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  
+  .poster {
+    width: 15%;
+    max-width: 150px;
+    border-radius: 20px;
+  }
+  
+  .trailer-content {
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .play-trailer-button {
+    margin-left: 20px;
+    background-color: white;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  
+  .trailer-link:hover{
+    color:rgba(255, 255, 255, 0.836);
+  }
+  
+  .play-trailer-button:hover {
+    background-color: rgba(255, 255, 255, 0.836);
+  }
+  
+  /*
+    CONFIGURAÇÃO DA DIV CONTEUDO
+  */
+  .container-teste {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .conteudo {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+  }
+  
+  /*
+    CONFIGURAÇÃO DO ASIDE
+  */
+  .aside-container {
+    width: 100%;
+    max-width: 300px; 
+    margin: 10px auto;
+  }
+  
+  .filme {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .thumbnail-img {
+    width: 75px;
+    height: 100px;
+    border-radius: 25px;
+    margin-right: 10px;
+  }
+  
+  .info {
+    flex: 1;
+  }
+  
+  .play-button {
+    background-color: #7c7c7c;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /*
+    CONFIGURACAO DOS FAVORITOS
+  */
+  
+  .favoritos-dos-fans {
+    margin-top: 20px;
+    display: inline-block;
+    align-items: center;
+  }
+  
+  .filme {
+    display: inline-block;
+  }
+  
+  .imagem-filme > img, .imagem-filme, .info-filme {
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .trailer{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(138, 139, 139);
+  }
+  
+  /*
+    CONFIGURAÇÃO DO DAS CATEGORIAS  
+  */
+  
+  .categorias-container {
+    margin-top: 20px;
+    display: inline-block;
+    align-items: center;
+  }
+  
+  .categoria{
+    display: inline-block;
+  }
+  
+  .imagem-categoria > img, .imagem-categoria, .info-categoria, .info-categoria > a{
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+  }
+  
+  .info-categoria > a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /*
+    CONFIGURAÇÕES RESPONSIVAS
+  */
+  @media (max-width: 1160px) {
+  
+    .header-container {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    #barra-pesquisa {
+      width: 100%; 
+      margin: 10px 0;
+    }
+  
+    .options {
+      flex-direction: column; 
+    }
+  
+    .aside-container {
+      flex-direction: row;
+      width: 100%; 
+      max-width: none;
+    }
+  
+    .poster {
+      width: 25%;
+    }
+  
+  }
+  
